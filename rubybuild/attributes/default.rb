@@ -10,6 +10,6 @@ default[:rubybuild][:deb] = "ruby1.9_#{node[:rubybuild][:version]}-#{node[:rubyb
 default[:rubybuild][:s3] = {}
 default[:rubybuild][:s3][:upload] = false
 default[:rubybuild][:s3][:bucket] = ''
-default[:rubybuild][:s3][:path] = "#{node[:platform]}/#{node[:platform_version]}"
+default[:rubybuild][:s3][:path] = "#{node[:platform]}/#{node[:platform_version]}-with-readline"
 default[:rubybuild][:s3][:aws_access_key] = ""
 default[:rubybuild][:s3][:aws_secret_access_key] = ""
